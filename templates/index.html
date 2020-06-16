@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+<title> Task Master </title>
+{% endblock %}
+{% block body %}
+    <div class="black-80 shadow-1 pa5 mt4">
+        <form action="/share" method="post" >
+            <input type="text" name="path" class="ph3 pv2 f6 input-reset ba bg-transparent hover-bg-lightest-blue w-60" placeholder="Enter Absolute File Path">
+            <input type="submit" class="f6 link dim ph3 pv2 mb2 dib white bg-black w-15">
+        </form>
+    </div>
+{% endblock %}
